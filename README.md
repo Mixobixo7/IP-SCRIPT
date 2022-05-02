@@ -3,7 +3,7 @@
 
 
 Modo de uso:
-Tiene un menú es sencillo.
-1 pones la configuración
-2 borras la vlan con su número
-3 sales
+Tiene un menú sencillo.
+1) Pones la configuración.
+2) Borras la vlan con su número.
+3) Sales.
