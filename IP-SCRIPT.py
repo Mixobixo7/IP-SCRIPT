@@ -9,14 +9,6 @@ def green():
     GREEN = "\033[0;32m"
     stdout.write(GREEN)
 
-def blue():
-    BLUE = "\033[1;34m"
-    stdout.write(BLUE)
-
-def yellow():
-    YELLOW = "\033[1;33m"
-    stdout.write(YELLOW)
-
 def purple():
     PURPLE = "\033[1;35m"
     stdout.write(PURPLE)
@@ -56,6 +48,9 @@ def menu():
         exit()
 
 def apliconf():
+    white()
+    os.system("sudo apt install vlan net-tools kmod -y")
+    print("Dependencias instaladas correctamente")
     green()
     os.system("sudo modprobe 8021q")
     print("Selecciona IP y MS para la Vlan\n")
