@@ -60,9 +60,9 @@ def apliconf():
     white()
     print("Debian, kali, parrot, etc... usan eth0 \n Ubuntu y otros raros usan enp0s3")
     green()    
-        os.system(f"sudo vconfig add eth0 {VLAN}")
-        os.system(f"sudo ifconfig {ADAPTER}.{VLAN} {IP} up")
-        time.sleep(2)
+    os.system(f"sudo vconfig add {ADAPTER} {VLAN}")
+    os.system(f"sudo ifconfig {ADAPTER}.{VLAN} {IP} up")
+    time.sleep(2)
     print("Configuración aplicada correctamente")
 
 def delconf():
@@ -72,8 +72,8 @@ def delconf():
     white()
     print("Debian, kali, parrot, etc... usan eth0 \n Ubuntu y otros raros usan enp0s3")
     green()
-        os.system(f"sudo vconfig rem {ADAPTER}.{VLAN}")
-        time.sleep(2)
+    os.system(f"sudo vconfig rem {ADAPTER}.{VLAN}")
+    time.sleep(2)
     print("Configuración borrada correctamente")
 
 if __name__ == '__main__':
