@@ -72,6 +72,7 @@ def delconf():
     white()
     print("Debian, kali, parrot, etc... usan eth0 \n Ubuntu y otros raros usan enp0s3")
     green()
+    ADAPTER = input("Introduzca el nombre de la interfaz de red: ")
     os.system(f"sudo vconfig rem {ADAPTER}.{VLAN}")
     time.sleep(2)
     print("Configuración borrada correctamente")
