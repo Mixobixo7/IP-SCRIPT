@@ -56,13 +56,15 @@ def apliconf():
     print("Selecciona IP y MS para la Vlan\n")
     IP= input("Introduzca el CIDR: ")
     VLAN= input("Vlan: ")
-if (os.getenv("DESKTOP_SESSION")) = Ubuntu
+    
+    if os.getenv("DESKTOP_SESSION")) = Ubuntu
         os.system(f"sudo vconfig add enp0s3 {VLAN}")
         os.system(f"sudo ifconfig enp0s3.{VLAN} {IP} up")
         time.sleep(2)
     print("Configuración aplicada correctamente")
-else
-#Debian, kali, parrot, o todo lo que use eth0
+    else:
+    
+    #Debian, kali, parrot, o todo lo que use eth0
     os.system(f"sudo vconfig add eth0 {VLAN}")
     os.system(f"sudo ifconfig eth0.{VLAN} {IP} up")
     
@@ -74,13 +76,13 @@ def delconf():
     print("Selecciona VLAN para borrar")
     VLAN= input("Vlan para borrar: ")
 
-if (os.getenv("DESKTOP_SESSION")) = Ubuntu
+    if (os.getenv("DESKTOP_SESSION")) = Ubuntu
         os.system(f"sudo vconfig rem enp0s3.{VLAN}")
         time.sleep(2)
         print("\n Configuración borrada correctamente")
-
-else
-#Debian, kali, parrot, o todo lo que use eth0
+    else:
+        
+    #Debian, kali, parrot, o todo lo que use eth0
     os.system(f"sudo vconfig rem eth0.{VLAN}")
     
     time.sleep(2)
