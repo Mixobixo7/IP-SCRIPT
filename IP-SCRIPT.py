@@ -57,7 +57,7 @@ def apliconf():
     IP = input("Introduzca el CIDR: ")
     VLAN = input("Vlan: ")
     
-    if os.getenv("DESKTOP_SESSION") == Ubuntu
+    if os.getenv("DESKTOP_SESSION") == Ubuntu:
         os.system(f"sudo vconfig add enp0s3 {VLAN}")
         os.system(f"sudo ifconfig enp0s3.{VLAN} {IP} up")
         time.sleep(2)
@@ -75,7 +75,7 @@ def delconf():
     print("Selecciona VLAN para borrar")
     VLAN = input("Vlan para borrar: ")
 
-    if (os.getenv("DESKTOP_SESSION")) = Ubuntu:
+    if (os.getenv("DESKTOP_SESSION") == Ubuntu:
         os.system(f"sudo vconfig rem enp0s3.{VLAN}")
         time.sleep(2)
     else:   
