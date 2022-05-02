@@ -57,7 +57,7 @@ def apliconf():
     IP = input("Introduzca el CIDR: ")
     VLAN = input("Vlan: ")
     
-    if os.getenv("DESKTOP_SESSION") = Ubuntu
+    if os.getenv("DESKTOP_SESSION") == Ubuntu
         os.system(f"sudo vconfig add enp0s3 {VLAN}")
         os.system(f"sudo ifconfig enp0s3.{VLAN} {IP} up")
         time.sleep(2)
