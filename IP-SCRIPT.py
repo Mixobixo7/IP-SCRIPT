@@ -45,6 +45,11 @@ def menu():
     if option == "2":
         delconf()
     if option == "3":
+        purple()
+        os.system("clear")
+        print("Hasta la próxima :D")
+        time.sleep(2)
+        os.system("clear")
         exit()
 
 def apliconf():
