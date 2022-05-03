@@ -16,7 +16,7 @@ def purple():
 def white():
     WHITE = "\033[1;37m"
     stdout.write(WHITE)
-
+os.system("clear")
 banner = """
  ___ ____    ____   ____ ____  ___ ____ _____ 
 |_ _|  _ \  / ___| / ___|  _ \|_ _|  _ \_   _|
